@@ -1,0 +1,1133 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:233 (message)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      The system is: Linux - 6.8.0-35-generic - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/cc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/3.28.3/CompilerIdC/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-1k9pAc"
+      binary: "/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-1k9pAc"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-1k9pAc'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4e0c8/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_4e0c8.dir/build.make CMakeFiles/cmTC_4e0c8.dir/build
+        gmake[1]: Entering directory '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-1k9pAc'
+        Building C object CMakeFiles/cmTC_4e0c8.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_4e0c8.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.2.0-23ubuntu4' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-uJ7kn6/gcc-13-13.2.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-13-uJ7kn6/gcc-13-13.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.2.0 (Ubuntu 13.2.0-23ubuntu4) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4e0c8.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_4e0c8.dir/'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_4e0c8.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccrqHVyj.s
+        GNU C17 (Ubuntu 13.2.0-23ubuntu4) version 13.2.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 13.2.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-linux-gnu/13/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 35e51c4ef55ea8f6b448d85f0fac5984
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4e0c8.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_4e0c8.dir/'
+         as -v --64 -o CMakeFiles/cmTC_4e0c8.dir/CMakeCCompilerABI.c.o /tmp/ccrqHVyj.s
+        GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4e0c8.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_4e0c8.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_4e0c8
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4e0c8.dir/link.txt --verbose=1
+        /usr/bin/cc  -v -rdynamic CMakeFiles/cmTC_4e0c8.dir/CMakeCCompilerABI.c.o -o cmTC_4e0c8 
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.2.0-23ubuntu4' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-uJ7kn6/gcc-13-13.2.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-13-uJ7kn6/gcc-13-13.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.2.0 (Ubuntu 13.2.0-23ubuntu4) 
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_4e0c8' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_4e0c8.'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccAhqH8c.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_4e0c8 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_4e0c8.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_4e0c8' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_4e0c8.'
+        gmake[1]: Leaving directory '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-1k9pAc'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/x86_64-linux-gnu/13/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/13/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/13/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/gcc/x86_64-linux-gnu/13/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-1k9pAc']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4e0c8/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_4e0c8.dir/build.make CMakeFiles/cmTC_4e0c8.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-1k9pAc']
+        ignore line: [Building C object CMakeFiles/cmTC_4e0c8.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_4e0c8.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.2.0-23ubuntu4' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-uJ7kn6/gcc-13-13.2.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-13-uJ7kn6/gcc-13-13.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.2.0 (Ubuntu 13.2.0-23ubuntu4) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4e0c8.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_4e0c8.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_4e0c8.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccrqHVyj.s]
+        ignore line: [GNU C17 (Ubuntu 13.2.0-23ubuntu4) version 13.2.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 13.2.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/13/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 35e51c4ef55ea8f6b448d85f0fac5984]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4e0c8.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_4e0c8.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_4e0c8.dir/CMakeCCompilerABI.c.o /tmp/ccrqHVyj.s]
+        ignore line: [GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4e0c8.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_4e0c8.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_4e0c8]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4e0c8.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/cc  -v -rdynamic CMakeFiles/cmTC_4e0c8.dir/CMakeCCompilerABI.c.o -o cmTC_4e0c8 ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.2.0-23ubuntu4' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-uJ7kn6/gcc-13-13.2.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-13-uJ7kn6/gcc-13-13.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.2.0 (Ubuntu 13.2.0-23ubuntu4) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_4e0c8' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_4e0c8.']
+        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccAhqH8c.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_4e0c8 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_4e0c8.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/13/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccAhqH8c.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-export-dynamic] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_4e0c8] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../..]
+          arg [CMakeFiles/cmTC_4e0c8.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13] ==> [/usr/lib/gcc/x86_64-linux-gnu/13]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../..] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/13;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:102 (CHECK_C_COMPILER_FLAG)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_stdc89"
+    directories:
+      source: "/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-aimuNa"
+      binary: "/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-aimuNa"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+    buildResult:
+      variable: "FLAG_SUPPORTED_stdc89"
+      cached: true
+      stdout: |
+        Change Dir: '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-aimuNa'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f2f59/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_f2f59.dir/build.make CMakeFiles/cmTC_f2f59.dir/build
+        gmake[1]: Entering directory '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-aimuNa'
+        Building C object CMakeFiles/cmTC_f2f59.dir/src.c.o
+        /usr/bin/cc -DFLAG_SUPPORTED_stdc89  -std=c89 -o CMakeFiles/cmTC_f2f59.dir/src.c.o -c /home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-aimuNa/src.c
+        Linking C executable cmTC_f2f59
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f2f59.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_f2f59.dir/src.c.o -o cmTC_f2f59 
+        gmake[1]: Leaving directory '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-aimuNa'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:102 (CHECK_C_COMPILER_FLAG)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_pedantic"
+    directories:
+      source: "/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-A9TqBO"
+      binary: "/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-A9TqBO"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c89"
+    buildResult:
+      variable: "FLAG_SUPPORTED_pedantic"
+      cached: true
+      stdout: |
+        Change Dir: '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-A9TqBO'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f07de/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_f07de.dir/build.make CMakeFiles/cmTC_f07de.dir/build
+        gmake[1]: Entering directory '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-A9TqBO'
+        Building C object CMakeFiles/cmTC_f07de.dir/src.c.o
+        /usr/bin/cc -DFLAG_SUPPORTED_pedantic  -std=c89    -pedantic -o CMakeFiles/cmTC_f07de.dir/src.c.o -c /home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-A9TqBO/src.c
+        Linking C executable cmTC_f07de
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f07de.dir/link.txt --verbose=1
+        /usr/bin/cc  -std=c89  -rdynamic CMakeFiles/cmTC_f07de.dir/src.c.o -o cmTC_f07de 
+        gmake[1]: Leaving directory '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-A9TqBO'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:102 (CHECK_C_COMPILER_FLAG)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wall"
+    directories:
+      source: "/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-oVu74K"
+      binary: "/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-oVu74K"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c89 -pedantic"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wall"
+      cached: true
+      stdout: |
+        Change Dir: '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-oVu74K'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_79fcc/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_79fcc.dir/build.make CMakeFiles/cmTC_79fcc.dir/build
+        gmake[1]: Entering directory '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-oVu74K'
+        Building C object CMakeFiles/cmTC_79fcc.dir/src.c.o
+        /usr/bin/cc -DFLAG_SUPPORTED_Wall  -std=c89 -pedantic    -Wall -o CMakeFiles/cmTC_79fcc.dir/src.c.o -c /home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-oVu74K/src.c
+        Linking C executable cmTC_79fcc
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_79fcc.dir/link.txt --verbose=1
+        /usr/bin/cc  -std=c89 -pedantic  -rdynamic CMakeFiles/cmTC_79fcc.dir/src.c.o -o cmTC_79fcc 
+        gmake[1]: Leaving directory '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-oVu74K'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:102 (CHECK_C_COMPILER_FLAG)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wextra"
+    directories:
+      source: "/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-l0EtZd"
+      binary: "/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-l0EtZd"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c89 -pedantic -Wall"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wextra"
+      cached: true
+      stdout: |
+        Change Dir: '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-l0EtZd'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7353d/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_7353d.dir/build.make CMakeFiles/cmTC_7353d.dir/build
+        gmake[1]: Entering directory '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-l0EtZd'
+        Building C object CMakeFiles/cmTC_7353d.dir/src.c.o
+        /usr/bin/cc -DFLAG_SUPPORTED_Wextra  -std=c89 -pedantic -Wall    -Wextra -o CMakeFiles/cmTC_7353d.dir/src.c.o -c /home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-l0EtZd/src.c
+        Linking C executable cmTC_7353d
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7353d.dir/link.txt --verbose=1
+        /usr/bin/cc  -std=c89 -pedantic -Wall  -rdynamic CMakeFiles/cmTC_7353d.dir/src.c.o -o cmTC_7353d 
+        gmake[1]: Leaving directory '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-l0EtZd'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:102 (CHECK_C_COMPILER_FLAG)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Werror"
+    directories:
+      source: "/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-GS7ULk"
+      binary: "/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-GS7ULk"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c89 -pedantic -Wall -Wextra"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Werror"
+      cached: true
+      stdout: |
+        Change Dir: '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-GS7ULk'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3ac6f/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_3ac6f.dir/build.make CMakeFiles/cmTC_3ac6f.dir/build
+        gmake[1]: Entering directory '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-GS7ULk'
+        Building C object CMakeFiles/cmTC_3ac6f.dir/src.c.o
+        /usr/bin/cc -DFLAG_SUPPORTED_Werror  -std=c89 -pedantic -Wall -Wextra    -Werror -o CMakeFiles/cmTC_3ac6f.dir/src.c.o -c /home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-GS7ULk/src.c
+        Linking C executable cmTC_3ac6f
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3ac6f.dir/link.txt --verbose=1
+        /usr/bin/cc  -std=c89 -pedantic -Wall -Wextra  -rdynamic CMakeFiles/cmTC_3ac6f.dir/src.c.o -o cmTC_3ac6f 
+        gmake[1]: Leaving directory '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-GS7ULk'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:102 (CHECK_C_COMPILER_FLAG)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wstrictprototypes"
+    directories:
+      source: "/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-SVE5kX"
+      binary: "/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-SVE5kX"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c89 -pedantic -Wall -Wextra -Werror"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wstrictprototypes"
+      cached: true
+      stdout: |
+        Change Dir: '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-SVE5kX'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3fe77/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_3fe77.dir/build.make CMakeFiles/cmTC_3fe77.dir/build
+        gmake[1]: Entering directory '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-SVE5kX'
+        Building C object CMakeFiles/cmTC_3fe77.dir/src.c.o
+        /usr/bin/cc -DFLAG_SUPPORTED_Wstrictprototypes  -std=c89 -pedantic -Wall -Wextra -Werror    -Wstrict-prototypes -o CMakeFiles/cmTC_3fe77.dir/src.c.o -c /home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-SVE5kX/src.c
+        Linking C executable cmTC_3fe77
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3fe77.dir/link.txt --verbose=1
+        /usr/bin/cc  -std=c89 -pedantic -Wall -Wextra -Werror  -rdynamic CMakeFiles/cmTC_3fe77.dir/src.c.o -o cmTC_3fe77 
+        gmake[1]: Leaving directory '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-SVE5kX'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:102 (CHECK_C_COMPILER_FLAG)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wwritestrings"
+    directories:
+      source: "/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-8HG2GC"
+      binary: "/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-8HG2GC"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wwritestrings"
+      cached: true
+      stdout: |
+        Change Dir: '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-8HG2GC'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4c5b5/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_4c5b5.dir/build.make CMakeFiles/cmTC_4c5b5.dir/build
+        gmake[1]: Entering directory '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-8HG2GC'
+        Building C object CMakeFiles/cmTC_4c5b5.dir/src.c.o
+        /usr/bin/cc -DFLAG_SUPPORTED_Wwritestrings  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes    -Wwrite-strings -o CMakeFiles/cmTC_4c5b5.dir/src.c.o -c /home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-8HG2GC/src.c
+        Linking C executable cmTC_4c5b5
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4c5b5.dir/link.txt --verbose=1
+        /usr/bin/cc  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes  -rdynamic CMakeFiles/cmTC_4c5b5.dir/src.c.o -o cmTC_4c5b5 
+        gmake[1]: Leaving directory '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-8HG2GC'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:102 (CHECK_C_COMPILER_FLAG)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wshadow"
+    directories:
+      source: "/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-gCyDAf"
+      binary: "/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-gCyDAf"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wshadow"
+      cached: true
+      stdout: |
+        Change Dir: '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-gCyDAf'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_aa518/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_aa518.dir/build.make CMakeFiles/cmTC_aa518.dir/build
+        gmake[1]: Entering directory '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-gCyDAf'
+        Building C object CMakeFiles/cmTC_aa518.dir/src.c.o
+        /usr/bin/cc -DFLAG_SUPPORTED_Wshadow  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings    -Wshadow -o CMakeFiles/cmTC_aa518.dir/src.c.o -c /home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-gCyDAf/src.c
+        Linking C executable cmTC_aa518
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aa518.dir/link.txt --verbose=1
+        /usr/bin/cc  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings  -rdynamic CMakeFiles/cmTC_aa518.dir/src.c.o -o cmTC_aa518 
+        gmake[1]: Leaving directory '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-gCyDAf'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:102 (CHECK_C_COMPILER_FLAG)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Winitself"
+    directories:
+      source: "/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-jZH8DF"
+      binary: "/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-jZH8DF"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Winitself"
+      cached: true
+      stdout: |
+        Change Dir: '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-jZH8DF'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c36c7/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_c36c7.dir/build.make CMakeFiles/cmTC_c36c7.dir/build
+        gmake[1]: Entering directory '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-jZH8DF'
+        Building C object CMakeFiles/cmTC_c36c7.dir/src.c.o
+        /usr/bin/cc -DFLAG_SUPPORTED_Winitself  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow    -Winit-self -o CMakeFiles/cmTC_c36c7.dir/src.c.o -c /home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-jZH8DF/src.c
+        Linking C executable cmTC_c36c7
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c36c7.dir/link.txt --verbose=1
+        /usr/bin/cc  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow  -rdynamic CMakeFiles/cmTC_c36c7.dir/src.c.o -o cmTC_c36c7 
+        gmake[1]: Leaving directory '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-jZH8DF'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:102 (CHECK_C_COMPILER_FLAG)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wcastalign"
+    directories:
+      source: "/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-85OU8C"
+      binary: "/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-85OU8C"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wcastalign"
+      cached: true
+      stdout: |
+        Change Dir: '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-85OU8C'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b0ca7/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b0ca7.dir/build.make CMakeFiles/cmTC_b0ca7.dir/build
+        gmake[1]: Entering directory '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-85OU8C'
+        Building C object CMakeFiles/cmTC_b0ca7.dir/src.c.o
+        /usr/bin/cc -DFLAG_SUPPORTED_Wcastalign  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self    -Wcast-align -o CMakeFiles/cmTC_b0ca7.dir/src.c.o -c /home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-85OU8C/src.c
+        Linking C executable cmTC_b0ca7
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b0ca7.dir/link.txt --verbose=1
+        /usr/bin/cc  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self  -rdynamic CMakeFiles/cmTC_b0ca7.dir/src.c.o -o cmTC_b0ca7 
+        gmake[1]: Leaving directory '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-85OU8C'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:102 (CHECK_C_COMPILER_FLAG)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wformat2"
+    directories:
+      source: "/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-DwdS95"
+      binary: "/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-DwdS95"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wformat2"
+      cached: true
+      stdout: |
+        Change Dir: '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-DwdS95'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_2f870/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_2f870.dir/build.make CMakeFiles/cmTC_2f870.dir/build
+        gmake[1]: Entering directory '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-DwdS95'
+        Building C object CMakeFiles/cmTC_2f870.dir/src.c.o
+        /usr/bin/cc -DFLAG_SUPPORTED_Wformat2  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align    -Wformat=2 -o CMakeFiles/cmTC_2f870.dir/src.c.o -c /home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-DwdS95/src.c
+        Linking C executable cmTC_2f870
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2f870.dir/link.txt --verbose=1
+        /usr/bin/cc  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align  -rdynamic CMakeFiles/cmTC_2f870.dir/src.c.o -o cmTC_2f870 
+        gmake[1]: Leaving directory '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-DwdS95'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:102 (CHECK_C_COMPILER_FLAG)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wmissingprototypes"
+    directories:
+      source: "/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-4rQBzb"
+      binary: "/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-4rQBzb"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wmissingprototypes"
+      cached: true
+      stdout: |
+        Change Dir: '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-4rQBzb'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_39f37/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_39f37.dir/build.make CMakeFiles/cmTC_39f37.dir/build
+        gmake[1]: Entering directory '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-4rQBzb'
+        Building C object CMakeFiles/cmTC_39f37.dir/src.c.o
+        /usr/bin/cc -DFLAG_SUPPORTED_Wmissingprototypes  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2    -Wmissing-prototypes -o CMakeFiles/cmTC_39f37.dir/src.c.o -c /home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-4rQBzb/src.c
+        Linking C executable cmTC_39f37
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_39f37.dir/link.txt --verbose=1
+        /usr/bin/cc  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2  -rdynamic CMakeFiles/cmTC_39f37.dir/src.c.o -o cmTC_39f37 
+        gmake[1]: Leaving directory '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-4rQBzb'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:102 (CHECK_C_COMPILER_FLAG)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wstrictoverflow2"
+    directories:
+      source: "/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-fmLPvD"
+      binary: "/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-fmLPvD"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wstrictoverflow2"
+      cached: true
+      stdout: |
+        Change Dir: '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-fmLPvD'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7e025/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_7e025.dir/build.make CMakeFiles/cmTC_7e025.dir/build
+        gmake[1]: Entering directory '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-fmLPvD'
+        Building C object CMakeFiles/cmTC_7e025.dir/src.c.o
+        /usr/bin/cc -DFLAG_SUPPORTED_Wstrictoverflow2  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes    -Wstrict-overflow=2 -o CMakeFiles/cmTC_7e025.dir/src.c.o -c /home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-fmLPvD/src.c
+        Linking C executable cmTC_7e025
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7e025.dir/link.txt --verbose=1
+        /usr/bin/cc  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes  -rdynamic CMakeFiles/cmTC_7e025.dir/src.c.o -o cmTC_7e025 
+        gmake[1]: Leaving directory '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-fmLPvD'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:102 (CHECK_C_COMPILER_FLAG)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wcastqual"
+    directories:
+      source: "/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-P5D5Nj"
+      binary: "/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-P5D5Nj"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wcastqual"
+      cached: true
+      stdout: |
+        Change Dir: '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-P5D5Nj'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ed2ae/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ed2ae.dir/build.make CMakeFiles/cmTC_ed2ae.dir/build
+        gmake[1]: Entering directory '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-P5D5Nj'
+        Building C object CMakeFiles/cmTC_ed2ae.dir/src.c.o
+        /usr/bin/cc -DFLAG_SUPPORTED_Wcastqual  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2    -Wcast-qual -o CMakeFiles/cmTC_ed2ae.dir/src.c.o -c /home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-P5D5Nj/src.c
+        Linking C executable cmTC_ed2ae
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ed2ae.dir/link.txt --verbose=1
+        /usr/bin/cc  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2  -rdynamic CMakeFiles/cmTC_ed2ae.dir/src.c.o -o cmTC_ed2ae 
+        gmake[1]: Leaving directory '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-P5D5Nj'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:102 (CHECK_C_COMPILER_FLAG)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wundef"
+    directories:
+      source: "/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-PxiiIO"
+      binary: "/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-PxiiIO"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wundef"
+      cached: true
+      stdout: |
+        Change Dir: '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-PxiiIO'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9580c/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_9580c.dir/build.make CMakeFiles/cmTC_9580c.dir/build
+        gmake[1]: Entering directory '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-PxiiIO'
+        Building C object CMakeFiles/cmTC_9580c.dir/src.c.o
+        /usr/bin/cc -DFLAG_SUPPORTED_Wundef  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual    -Wundef -o CMakeFiles/cmTC_9580c.dir/src.c.o -c /home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-PxiiIO/src.c
+        Linking C executable cmTC_9580c
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9580c.dir/link.txt --verbose=1
+        /usr/bin/cc  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual  -rdynamic CMakeFiles/cmTC_9580c.dir/src.c.o -o cmTC_9580c 
+        gmake[1]: Leaving directory '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-PxiiIO'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:102 (CHECK_C_COMPILER_FLAG)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wswitchdefault"
+    directories:
+      source: "/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-98IQV5"
+      binary: "/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-98IQV5"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wswitchdefault"
+      cached: true
+      stdout: |
+        Change Dir: '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-98IQV5'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7c7f1/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_7c7f1.dir/build.make CMakeFiles/cmTC_7c7f1.dir/build
+        gmake[1]: Entering directory '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-98IQV5'
+        Building C object CMakeFiles/cmTC_7c7f1.dir/src.c.o
+        /usr/bin/cc -DFLAG_SUPPORTED_Wswitchdefault  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef    -Wswitch-default -o CMakeFiles/cmTC_7c7f1.dir/src.c.o -c /home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-98IQV5/src.c
+        Linking C executable cmTC_7c7f1
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7c7f1.dir/link.txt --verbose=1
+        /usr/bin/cc  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef  -rdynamic CMakeFiles/cmTC_7c7f1.dir/src.c.o -o cmTC_7c7f1 
+        gmake[1]: Leaving directory '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-98IQV5'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:102 (CHECK_C_COMPILER_FLAG)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wconversion"
+    directories:
+      source: "/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-lBRr7J"
+      binary: "/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-lBRr7J"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wconversion"
+      cached: true
+      stdout: |
+        Change Dir: '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-lBRr7J'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c2e2d/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_c2e2d.dir/build.make CMakeFiles/cmTC_c2e2d.dir/build
+        gmake[1]: Entering directory '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-lBRr7J'
+        Building C object CMakeFiles/cmTC_c2e2d.dir/src.c.o
+        /usr/bin/cc -DFLAG_SUPPORTED_Wconversion  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default    -Wconversion -o CMakeFiles/cmTC_c2e2d.dir/src.c.o -c /home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-lBRr7J/src.c
+        Linking C executable cmTC_c2e2d
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c2e2d.dir/link.txt --verbose=1
+        /usr/bin/cc  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default  -rdynamic CMakeFiles/cmTC_c2e2d.dir/src.c.o -o cmTC_c2e2d 
+        gmake[1]: Leaving directory '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-lBRr7J'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:102 (CHECK_C_COMPILER_FLAG)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wccompat"
+    directories:
+      source: "/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-QejUGa"
+      binary: "/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-QejUGa"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wccompat"
+      cached: true
+      stdout: |
+        Change Dir: '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-QejUGa'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ef568/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ef568.dir/build.make CMakeFiles/cmTC_ef568.dir/build
+        gmake[1]: Entering directory '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-QejUGa'
+        Building C object CMakeFiles/cmTC_ef568.dir/src.c.o
+        /usr/bin/cc -DFLAG_SUPPORTED_Wccompat  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion    -Wc++-compat -o CMakeFiles/cmTC_ef568.dir/src.c.o -c /home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-QejUGa/src.c
+        Linking C executable cmTC_ef568
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ef568.dir/link.txt --verbose=1
+        /usr/bin/cc  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion  -rdynamic CMakeFiles/cmTC_ef568.dir/src.c.o -o cmTC_ef568 
+        gmake[1]: Leaving directory '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-QejUGa'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:102 (CHECK_C_COMPILER_FLAG)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_fstackprotectorstrong"
+    directories:
+      source: "/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-bFXKrG"
+      binary: "/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-bFXKrG"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat"
+    buildResult:
+      variable: "FLAG_SUPPORTED_fstackprotectorstrong"
+      cached: true
+      stdout: |
+        Change Dir: '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-bFXKrG'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_18f7c/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_18f7c.dir/build.make CMakeFiles/cmTC_18f7c.dir/build
+        gmake[1]: Entering directory '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-bFXKrG'
+        Building C object CMakeFiles/cmTC_18f7c.dir/src.c.o
+        /usr/bin/cc -DFLAG_SUPPORTED_fstackprotectorstrong  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat    -fstack-protector-strong -o CMakeFiles/cmTC_18f7c.dir/src.c.o -c /home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-bFXKrG/src.c
+        Linking C executable cmTC_18f7c
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_18f7c.dir/link.txt --verbose=1
+        /usr/bin/cc  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat  -rdynamic CMakeFiles/cmTC_18f7c.dir/src.c.o -o cmTC_18f7c 
+        gmake[1]: Leaving directory '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-bFXKrG'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:102 (CHECK_C_COMPILER_FLAG)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wcomma"
+    directories:
+      source: "/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-N9A2sI"
+      binary: "/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-N9A2sI"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wcomma"
+      cached: true
+      stdout: |
+        Change Dir: '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-N9A2sI'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c96e9/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_c96e9.dir/build.make CMakeFiles/cmTC_c96e9.dir/build
+        gmake[1]: Entering directory '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-N9A2sI'
+        Building C object CMakeFiles/cmTC_c96e9.dir/src.c.o
+        /usr/bin/cc -DFLAG_SUPPORTED_Wcomma  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong    -Wcomma -o CMakeFiles/cmTC_c96e9.dir/src.c.o -c /home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-N9A2sI/src.c
+        cc: error: unrecognized command-line option '-Wcomma'; did you mean '-Wcomment'?
+        gmake[1]: *** [CMakeFiles/cmTC_c96e9.dir/build.make:78: CMakeFiles/cmTC_c96e9.dir/src.c.o] Error 1
+        gmake[1]: Leaving directory '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-N9A2sI'
+        gmake: *** [Makefile:127: cmTC_c96e9/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:102 (CHECK_C_COMPILER_FLAG)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wdoublepromotion"
+    directories:
+      source: "/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-SRxkpn"
+      binary: "/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-SRxkpn"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wdoublepromotion"
+      cached: true
+      stdout: |
+        Change Dir: '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-SRxkpn'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a105d/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_a105d.dir/build.make CMakeFiles/cmTC_a105d.dir/build
+        gmake[1]: Entering directory '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-SRxkpn'
+        Building C object CMakeFiles/cmTC_a105d.dir/src.c.o
+        /usr/bin/cc -DFLAG_SUPPORTED_Wdoublepromotion  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong    -Wdouble-promotion -o CMakeFiles/cmTC_a105d.dir/src.c.o -c /home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-SRxkpn/src.c
+        Linking C executable cmTC_a105d
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a105d.dir/link.txt --verbose=1
+        /usr/bin/cc  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong  -rdynamic CMakeFiles/cmTC_a105d.dir/src.c.o -o cmTC_a105d 
+        gmake[1]: Leaving directory '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-SRxkpn'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:102 (CHECK_C_COMPILER_FLAG)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wparentheses"
+    directories:
+      source: "/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-CaFvQQ"
+      binary: "/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-CaFvQQ"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wparentheses"
+      cached: true
+      stdout: |
+        Change Dir: '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-CaFvQQ'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9f117/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_9f117.dir/build.make CMakeFiles/cmTC_9f117.dir/build
+        gmake[1]: Entering directory '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-CaFvQQ'
+        Building C object CMakeFiles/cmTC_9f117.dir/src.c.o
+        /usr/bin/cc -DFLAG_SUPPORTED_Wparentheses  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion    -Wparentheses -o CMakeFiles/cmTC_9f117.dir/src.c.o -c /home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-CaFvQQ/src.c
+        Linking C executable cmTC_9f117
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9f117.dir/link.txt --verbose=1
+        /usr/bin/cc  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion  -rdynamic CMakeFiles/cmTC_9f117.dir/src.c.o -o cmTC_9f117 
+        gmake[1]: Leaving directory '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-CaFvQQ'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:102 (CHECK_C_COMPILER_FLAG)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wformatoverflow"
+    directories:
+      source: "/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-8CMyAT"
+      binary: "/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-8CMyAT"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wformatoverflow"
+      cached: true
+      stdout: |
+        Change Dir: '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-8CMyAT'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0423c/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_0423c.dir/build.make CMakeFiles/cmTC_0423c.dir/build
+        gmake[1]: Entering directory '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-8CMyAT'
+        Building C object CMakeFiles/cmTC_0423c.dir/src.c.o
+        /usr/bin/cc -DFLAG_SUPPORTED_Wformatoverflow  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses    -Wformat-overflow -o CMakeFiles/cmTC_0423c.dir/src.c.o -c /home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-8CMyAT/src.c
+        Linking C executable cmTC_0423c
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0423c.dir/link.txt --verbose=1
+        /usr/bin/cc  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses  -rdynamic CMakeFiles/cmTC_0423c.dir/src.c.o -o cmTC_0423c 
+        gmake[1]: Leaving directory '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-8CMyAT'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:102 (CHECK_C_COMPILER_FLAG)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wunusedmacros"
+    directories:
+      source: "/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-kNeLVv"
+      binary: "/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-kNeLVv"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wunusedmacros"
+      cached: true
+      stdout: |
+        Change Dir: '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-kNeLVv'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_df559/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_df559.dir/build.make CMakeFiles/cmTC_df559.dir/build
+        gmake[1]: Entering directory '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-kNeLVv'
+        Building C object CMakeFiles/cmTC_df559.dir/src.c.o
+        /usr/bin/cc -DFLAG_SUPPORTED_Wunusedmacros  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow    -Wunused-macros -o CMakeFiles/cmTC_df559.dir/src.c.o -c /home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-kNeLVv/src.c
+        Linking C executable cmTC_df559
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_df559.dir/link.txt --verbose=1
+        /usr/bin/cc  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow  -rdynamic CMakeFiles/cmTC_df559.dir/src.c.o -o cmTC_df559 
+        gmake[1]: Leaving directory '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-kNeLVv'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:102 (CHECK_C_COMPILER_FLAG)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wmissingvariabledeclarations"
+    directories:
+      source: "/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-2cszds"
+      binary: "/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-2cszds"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wmissingvariabledeclarations"
+      cached: true
+      stdout: |
+        Change Dir: '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-2cszds'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3ddca/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_3ddca.dir/build.make CMakeFiles/cmTC_3ddca.dir/build
+        gmake[1]: Entering directory '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-2cszds'
+        Building C object CMakeFiles/cmTC_3ddca.dir/src.c.o
+        /usr/bin/cc -DFLAG_SUPPORTED_Wmissingvariabledeclarations  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros    -Wmissing-variable-declarations -o CMakeFiles/cmTC_3ddca.dir/src.c.o -c /home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-2cszds/src.c
+        cc: error: unrecognized command-line option '-Wmissing-variable-declarations'; did you mean '-Wmissing-declarations'?
+        gmake[1]: *** [CMakeFiles/cmTC_3ddca.dir/build.make:78: CMakeFiles/cmTC_3ddca.dir/src.c.o] Error 1
+        gmake[1]: Leaving directory '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-2cszds'
+        gmake: *** [Makefile:127: cmTC_3ddca/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:102 (CHECK_C_COMPILER_FLAG)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wusedbutmarkedunused"
+    directories:
+      source: "/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-7Fzp4r"
+      binary: "/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-7Fzp4r"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wusedbutmarkedunused"
+      cached: true
+      stdout: |
+        Change Dir: '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-7Fzp4r'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f3906/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_f3906.dir/build.make CMakeFiles/cmTC_f3906.dir/build
+        gmake[1]: Entering directory '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-7Fzp4r'
+        Building C object CMakeFiles/cmTC_f3906.dir/src.c.o
+        /usr/bin/cc -DFLAG_SUPPORTED_Wusedbutmarkedunused  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros    -Wused-but-marked-unused -o CMakeFiles/cmTC_f3906.dir/src.c.o -c /home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-7Fzp4r/src.c
+        cc: error: unrecognized command-line option '-Wused-but-marked-unused'
+        gmake[1]: *** [CMakeFiles/cmTC_f3906.dir/build.make:78: CMakeFiles/cmTC_f3906.dir/src.c.o] Error 1
+        gmake[1]: Leaving directory '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-7Fzp4r'
+        gmake: *** [Makefile:127: cmTC_f3906/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:102 (CHECK_C_COMPILER_FLAG)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_Wswitchenum"
+    directories:
+      source: "/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-UCPt1i"
+      binary: "/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-UCPt1i"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros"
+    buildResult:
+      variable: "FLAG_SUPPORTED_Wswitchenum"
+      cached: true
+      stdout: |
+        Change Dir: '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-UCPt1i'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b8d66/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b8d66.dir/build.make CMakeFiles/cmTC_b8d66.dir/build
+        gmake[1]: Entering directory '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-UCPt1i'
+        Building C object CMakeFiles/cmTC_b8d66.dir/src.c.o
+        /usr/bin/cc -DFLAG_SUPPORTED_Wswitchenum  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros    -Wswitch-enum -o CMakeFiles/cmTC_b8d66.dir/src.c.o -c /home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-UCPt1i/src.c
+        Linking C executable cmTC_b8d66
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b8d66.dir/link.txt --verbose=1
+        /usr/bin/cc  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros  -rdynamic CMakeFiles/cmTC_b8d66.dir/src.c.o -o cmTC_b8d66 
+        gmake[1]: Leaving directory '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-UCPt1i'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "CMakeLists.txt:102 (CHECK_C_COMPILER_FLAG)"
+    checks:
+      - "Performing Test FLAG_SUPPORTED_fvisibilityhidden"
+    directories:
+      source: "/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-FdjxU0"
+      binary: "/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-FdjxU0"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros -Wswitch-enum"
+    buildResult:
+      variable: "FLAG_SUPPORTED_fvisibilityhidden"
+      cached: true
+      stdout: |
+        Change Dir: '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-FdjxU0'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8ec76/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_8ec76.dir/build.make CMakeFiles/cmTC_8ec76.dir/build
+        gmake[1]: Entering directory '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-FdjxU0'
+        Building C object CMakeFiles/cmTC_8ec76.dir/src.c.o
+        /usr/bin/cc -DFLAG_SUPPORTED_fvisibilityhidden  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros -Wswitch-enum    -fvisibility=hidden -o CMakeFiles/cmTC_8ec76.dir/src.c.o -c /home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-FdjxU0/src.c
+        Linking C executable cmTC_8ec76
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8ec76.dir/link.txt --verbose=1
+        /usr/bin/cc  -std=c89 -pedantic -Wall -Wextra -Werror -Wstrict-prototypes -Wwrite-strings -Wshadow -Winit-self -Wcast-align -Wformat=2 -Wmissing-prototypes -Wstrict-overflow=2 -Wcast-qual -Wundef -Wswitch-default -Wconversion -Wc++-compat -fstack-protector-strong -Wdouble-promotion -Wparentheses -Wformat-overflow -Wunused-macros -Wswitch-enum  -rdynamic CMakeFiles/cmTC_8ec76.dir/src.c.o -o cmTC_8ec76 
+        gmake[1]: Leaving directory '/home/raul/Documentos/taskcom/lib/cJSON-master/build/CMakeFiles/CMakeScratch/TryCompile-FdjxU0'
+        
+      exitCode: 0
+...
