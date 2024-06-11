@@ -1,2 +1,4 @@
-1|Comer pan
-2|Pannnnn
+1|Salir a correr|1
+2|Cocinar|1
+3|Estudiar para el examen|5
+4|Ir a ver a la bichi|5
