@@ -78,7 +78,7 @@ void remove_task(int id) {
     if (it != tasks.end()) {
         tasks.erase(it, tasks.end());
         save_tasks(tasks);
-        std::cout << "Task with ID " << id << " removed.\n";
+        std::cout << "Task with ID " << id << " has been completed.\n";
     } else {
         std::cout << "No task found with ID " << id << ".\n";
     }
@@ -96,7 +96,7 @@ int main(int argc, char** argv) {
 
     app.add_flag("-l,--list", list, "List all tasks");
     app.add_flag("-a,--add", add, "Add a new task");
-    app.add_flag("-r,--remove", remove, "Remove a task by ID");
+    app.add_flag("-c,--check", remove, "Check the task with the given ID");
     app.add_option("-d,--description", description, "Description of the new task")->needs("-a");
     app.add_option("-i,--id", id, "ID of the task to remove")->needs("-r");
     app.add_option("-u,--urgency", urgency, "Urgency of the task 1-5")->needs("-d");
