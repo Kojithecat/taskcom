@@ -4,7 +4,7 @@
 #include <string>
 #include <CLI/CLI.hpp>
 
-const std::string TASK_FILE = "tasks.txt";
+const std::string TASK_FILE = "/home/raul/Documentos/taskcom/build/tasks.txt";
 
 struct Task {
     int id;
