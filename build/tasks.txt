@@ -1,2 +1,2 @@
-1|Fix remove|1
 2|Add color to urgencies|1
+3|commit right now|5
