@@ -57,15 +57,19 @@ void taskColor(std::string & colorInit, std::string & colorEnd, const int &  urg
 	    colorEnd = "\033[0m";
 	    break;	
 	    
-	case 4:
+	case 5:
 	    colorInit = "\033[31m";
 	    colorEnd = "\033[0m";
 	    break;	
 	    	
-	case 5:	
+	case 4:	
 	    colorInit = "\033[1;31m";
 	    colorEnd = "\033[0m";
-	    break;	    
+	    break;	 
+	
+	default:
+	    colorInit = "";
+	    colorEnd = "";
     }
 }
 

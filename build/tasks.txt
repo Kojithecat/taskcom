@@ -1,2 +1,4 @@
-2|Ir a casa de los yayos|3
-3|Cerrar la puerta al salir|5
+1|Beber vino|5
+2|Beber agua|1
+3|Beber leche|3
+4|Beber cocacola|4
