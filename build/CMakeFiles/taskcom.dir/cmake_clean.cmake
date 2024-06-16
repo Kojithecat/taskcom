@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/taskcom.dir/main.cpp.o"
   "CMakeFiles/taskcom.dir/main.cpp.o.d"
+  "CMakeFiles/taskcom.dir/task.cpp.o"
+  "CMakeFiles/taskcom.dir/task.cpp.o.d"
   "taskcom"
   "taskcom.pdb"
 )

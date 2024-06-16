@@ -538,6 +538,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/taskcom.dir/build.make CMakeFiles/taskcom.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+task.o: task.cpp.o
+.PHONY : task.o
+
+# target to build an object file
+task.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/taskcom.dir/build.make CMakeFiles/taskcom.dir/task.cpp.o
+.PHONY : task.cpp.o
+
+task.i: task.cpp.i
+.PHONY : task.i
+
+# target to preprocess a source file
+task.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/taskcom.dir/build.make CMakeFiles/taskcom.dir/task.cpp.i
+.PHONY : task.cpp.i
+
+task.s: task.cpp.s
+.PHONY : task.s
+
+# target to generate assembly for a file
+task.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/taskcom.dir/build.make CMakeFiles/taskcom.dir/task.cpp.s
+.PHONY : task.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -580,6 +604,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... task.o"
+	@echo "... task.i"
+	@echo "... task.s"
 .PHONY : help
 
 

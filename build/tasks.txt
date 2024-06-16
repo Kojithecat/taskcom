@@ -1,4 +1,2 @@
-1|Beber vino|5
-2|Beber agua|1
-3|Beber leche|3
-4|Beber cocacola|4
+1|Hola|1
+2|Hola 2|5

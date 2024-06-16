@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/raul/Documentos/taskcom/main.cpp" "CMakeFiles/taskcom.dir/main.cpp.o" "gcc" "CMakeFiles/taskcom.dir/main.cpp.o.d"
+  "/home/raul/Documentos/taskcom/task.cpp" "CMakeFiles/taskcom.dir/task.cpp.o" "gcc" "CMakeFiles/taskcom.dir/task.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

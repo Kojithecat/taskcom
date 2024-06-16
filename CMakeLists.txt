@@ -3,7 +3,7 @@ project(taskcom)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(taskcom main.cpp)
+add_executable(taskcom main.cpp task.cpp)
 
 # Add CLI11
 include(FetchContent)
